@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" link="style.css" />
+  </head>
+  <body style="background-color: rgba(10, 14, 14, 0.472);">
+    <div w3-include-html="navbar/navbar.html"></div>
+
+    <div
+      class="container"
+      style="
+        background-color: #d1e6ef49;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin-left: 200px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      "
+    >
+    
+      <h2>Contact Form</h2><br>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required />
+        </div><br>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label><br>
+          <input type="date" id="dob" name="dob" required />
+        </div><br>
+
+        <div class="form-group">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required />
+        </div><br>
+
+        <div class="form-group">
+          <label for="contact">Contact Number:</label>
+          <input type="tel" id="contact" name="contact" required />
+        </div><br>
+
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea
+            id="comment"
+            name="comment"
+            rows="3"
+            required
+            style="
+              width: 100%;
+              padding: 8px;
+              box-sizing: border-box;
+              margin-bottom: 10px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+            "
+          ></textarea>
+        </div><br>
+
+        <button
+          type="submit"
+          style="
+            background-color: #007bff;
+            hover {
+              background-color: #0056b3;
+            }
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          "
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <footer class="footer bg-dark text-light py-3"> 
+        <div class="container text-center">
+          <p>&copy; 2024 mulungi's blog post. All rights reserved.</p>
+        </div>
+      </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
